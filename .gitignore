@@ -1,5 +1,7 @@
+# Dependency directories
+node_modules/
 *.md
-
+#OSX stuff
 .DS_Store
 .DS_Store?
 ._*
