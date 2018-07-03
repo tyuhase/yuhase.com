@@ -1,2 +1,0 @@
-# yuhase.com
-personal site
