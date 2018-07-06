@@ -16,21 +16,21 @@ h1 {
   font-family: 'Anton', sans-serif;
   color: #333;
   margin: 10px 0px;
-  padding: .75vw; }
+  padding: .75vw 0; }
 
 h2 {
   font-size: 4em;
   font-weight: 400;
   color: #333;
   margin: 10px 0px;
-  padding: .75vw; }
+  padding: .75vw 0; }
 
 h3 {
   font-size: 2em;
   font-weight: 300;
   color: #333;
   margin: 10px 0px;
-  padding: .75vw; }
+  padding: .75vw 0; }
 
 p {
   font-size: 1.5em;
@@ -127,6 +127,11 @@ section {
 #hello div {
   width: 100%; }
 
+#hello h2 {
+  font-size: 20vh;
+  line-height: 1em;
+  margin-left: -.6vw; }
+
 .imgfull {
   width: 100%; }
 
@@ -213,7 +218,8 @@ footer {
     display: flex;
     width: 100%;
     margin: 0 auto;
-    max-width: 1170px; }
+    max-width: 1170px;
+    align-items: center; }
     section div {
       flex: 1 auto;
       margin: 0 2vw 0 0; }
