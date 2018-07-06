@@ -8,28 +8,24 @@ body { background: #eaeaea; margin: 0px auto; font-family: 'Oswald', sans-serif;
 h1 { font-size: 4em; font-family: 'Anton', sans-serif; color: #333; margin: 10px 0px; padding: .75vw; }
 h2 { font-size: 4em; font-weight: 400; color: #333; margin: 10px 0px; padding: .75vw; }
 h3 { font-size: 2em; font-weight: 300; color: #333; margin: 10px 0px; padding: .75vw; }
-p { font-size: 1.5em; margin: 0px; padding: 1vw; color: #333;}
+p { font-size: 1.5em; margin: 0px; padding: 2vh 0; color: #333;}
 a { text-decoration: none; color: #00aeef;  }
 span {font-family: 'Oswald', sans-serif;}
+img {width:100%;}
 
 /* Mobile First */
 
 header, main, nav, .sub-box, footer {
   flex: 1 100%;
 }
-header{
-	background: url(../images/backgrounds/rotate.php) no-repeat center top;
+header{ 
 	background-color: #777;
-	background-size: cover;
-	background-attachment: fixed;
 	min-height:100vh;
 	text-align:center;
 	transition: all 0.5s ease;
-	.container {
+.container {
 		margin: 50% auto;
 	}
-
-
  h1 {
 	font-size: 17vw;
 	font-weight: 700;
@@ -46,9 +42,18 @@ header{
 	color: #CCC;
 	text-shadow: 1px 4px 6px #000;
 }
+
 }
 header:focus {
 	transform: scale(1.2);
+}
+.bg1 {background: url(../images/backgrounds/bg2.gif);}
+.bg2 {background: url(../images/backgrounds/bg3.gif) ;}
+.bg3 {background: url(../images/backgrounds/bg6.gif) ;}
+.bg4 {background: url(../images/backgrounds/bg8.gif) ;}
+.bg1, .bg2, .bg3, .bg4 {
+	background-size: cover;
+	background-attachment: fixed;
 }
 nav {
  ul{
@@ -78,17 +83,17 @@ main {
 }
 section {
 	display: block;
-	width: 100%;
-	margin: 0 auto;
-	max-width: 1170px;
-
+	width: 95%;
+	margin: 2em auto;
 	div {
 		flex: 1 auto;
 		margin: 1vh 2vw;
 	}
 }
 #hello {
-
+ div {
+ 	width:100%
+ }
 }
 .imgfull {
 	width: 100%;
@@ -196,6 +201,11 @@ section {
 		flex: 1 auto;
 		margin: 0 2vw 0 0;
 	}
+}
+#hello {
+ div {
+ 	width:50%;
+ }
 }
 .imgfull {
 	width: 90%;

@@ -35,7 +35,7 @@ h3 {
 p {
   font-size: 1.5em;
   margin: 0px;
-  padding: 1vw;
+  padding: 2vh 0;
   color: #333; }
 
 a {
@@ -45,15 +45,15 @@ a {
 span {
   font-family: 'Oswald', sans-serif; }
 
+img {
+  width: 100%; }
+
 /* Mobile First */
 header, main, nav, .sub-box, footer {
   flex: 1 100%; }
 
 header {
-  background: url(../images/backgrounds/rotate.php) no-repeat center top;
   background-color: #777;
-  background-size: cover;
-  background-attachment: fixed;
   min-height: 100vh;
   text-align: center;
   transition: all 0.5s ease; }
@@ -76,6 +76,22 @@ header {
 
 header:focus {
   transform: scale(1.2); }
+
+.bg1 {
+  background: url(../images/backgrounds/bg2.gif); }
+
+.bg2 {
+  background: url(../images/backgrounds/bg3.gif); }
+
+.bg3 {
+  background: url(../images/backgrounds/bg6.gif); }
+
+.bg4 {
+  background: url(../images/backgrounds/bg8.gif); }
+
+.bg1, .bg2, .bg3, .bg4 {
+  background-size: cover;
+  background-attachment: fixed; }
 
 nav ul {
   list-style: none;
@@ -102,12 +118,14 @@ main {
 
 section {
   display: block;
-  width: 100%;
-  margin: 0 auto;
-  max-width: 1170px; }
+  width: 95%;
+  margin: 2em auto; }
   section div {
     flex: 1 auto;
     margin: 1vh 2vw; }
+
+#hello div {
+  width: 100%; }
 
 .imgfull {
   width: 100%; }
@@ -199,6 +217,8 @@ footer {
     section div {
       flex: 1 auto;
       margin: 0 2vw 0 0; }
+  #hello div {
+    width: 50%; }
   .imgfull {
     width: 90%;
     margin: 1vw 5% 1vw 5%; }

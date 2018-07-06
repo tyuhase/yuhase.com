@@ -16,5 +16,11 @@ $(document).ready(function() {
         }); 
     
     });
+    var classCycle=['bg1','bg2','bg3'];
+
+    var randomNumber = Math.floor(Math.random() * classCycle.length);
+    var classToAdd = classCycle[randomNumber];
+
+    $('header').addClass(classToAdd);
     
 });
