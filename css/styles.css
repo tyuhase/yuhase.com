@@ -122,15 +122,22 @@ section {
   margin: 2em auto; }
   section div {
     flex: 1 auto;
-    margin: 1vh 2vw; }
+    padding: 4vw; }
 
-#hello div {
-  width: 100%; }
-
-#hello h2 {
-  font-size: 20vh;
-  line-height: 1em;
-  margin-left: -.6vw; }
+#hello {
+  color: #f8d8f8;
+  background: #eee; }
+  #hello div {
+    width: 100%; }
+  #hello div:first-of-type {
+    background: #8f8d8f; }
+    #hello div:first-of-type p {
+      color: #eee; }
+  #hello h2 {
+    font-size: 20vh;
+    line-height: 1em;
+    margin-left: -.6vw;
+    color: #eee; }
 
 .imgfull {
   width: 100%; }
@@ -213,7 +220,7 @@ footer {
       padding: 10px; }
   main {
     order: 3;
-    margin: 0 auto; }
+    margin: 2em auto; }
   section {
     display: flex;
     width: 100%;
@@ -222,7 +229,7 @@ footer {
     align-items: center; }
     section div {
       flex: 1 auto;
-      margin: 0 2vw 0 0; }
+      padding: 4vw; }
   #hello div {
     width: 50%; }
   .imgfull {

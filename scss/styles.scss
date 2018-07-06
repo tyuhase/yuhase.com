@@ -86,19 +86,28 @@ section {
 	width: 95%;
 	margin: 2em auto;
 	div {
-		flex: 1 auto;
-		margin: 1vh 2vw;
+		flex: 1 auto; 
+		padding: 4vw;
 	}
 }
-#hello {
- div {
- 	width:100%
- }
- h2 {
-    font-size: 20vh;
-    line-height: 1em;
-    margin-left: -.6vw;
-}
+#hello { 
+	color: #f8d8f8;
+	background: #eee;
+	
+		 div {
+		 	width:100%
+		 }
+		 div:first-of-type {
+				background: #8f8d8f;
+				p {color: #eee;}
+		 }
+		 
+		 h2 {
+		    font-size: 20vh;
+		    line-height: 1em;
+		    margin-left: -.6vw;
+		    color: #eee;
+		}
 }
 .imgfull {
 	width: 100%;
@@ -194,7 +203,7 @@ nav {
 
 main {
 	order:3;
-	margin: 0 auto;
+	margin: 2em auto;
 }
 section {
 	display: flex;
@@ -205,13 +214,14 @@ section {
 
 	div {
 		flex: 1 auto;
-		margin: 0 2vw 0 0;
+		padding: 4vw;
 	}
 }
 #hello {
  div {
  	width:50%;
  }
+
 }
 .imgfull {
 	width: 90%;
