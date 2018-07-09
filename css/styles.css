@@ -19,15 +19,13 @@ h1 {
   padding: .75vw 0; }
 
 h2 {
-  font-size: 4em;
-  font-weight: 400;
+  font-size: 9vh;
   color: #333;
   margin: 10px 0px;
   padding: .75vw 0; }
 
 h3 {
   font-size: 2em;
-  font-weight: 300;
   color: #333;
   margin: 10px 0px;
   padding: .75vw 0; }
@@ -117,27 +115,60 @@ main {
   margin: 0 auto; }
 
 section {
-  display: block;
-  width: 95%;
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
   margin: 2em auto; }
   section div {
     flex: 1 auto;
-    padding: 4vw; }
+    padding: 5%; }
 
 #hello {
-  color: #f8d8f8;
-  background: #eee; }
+  color: #8f8d8f;
+  background: #eee;
+  margin-top: 0em; }
   #hello div {
-    width: 100%; }
+    width: auto; }
   #hello div:first-of-type {
     background: #8f8d8f; }
     #hello div:first-of-type p {
       color: #eee; }
   #hello h2 {
-    font-size: 20vh;
+    font-size: 18vh;
     line-height: 1em;
     margin-left: -.6vw;
     color: #eee; }
+
+#work {
+  color: #eee;
+  background: #8f8d8f;
+  margin-top: 0em; }
+  #work div {
+    width: auto; }
+  #work div:first-of-type {
+    background: #eee; }
+    #work div:first-of-type p {
+      color: #8f8d8f; }
+  #work h2 {
+    font-size: 18vh;
+    line-height: 1em;
+    margin-left: -.6vw;
+    color: #eee; }
+
+.workpic-outer {
+  background: url("/images/wb-1.jpg");
+  background-size: cover; }
+
+.workpic-inner {
+  background: url("/images/wb-2.jpg");
+  background-size: cover;
+  opacity: 0;
+  transition: all .7s ease-out, opacity .7s ease; }
+  .workpic-inner img {
+    min-height: 700px; }
+
+.workpic-inner:hover {
+  opacity: 1; }
 
 #portfolio div {
   padding: 0; }
@@ -154,15 +185,15 @@ section {
   position: relative;
   float: left;
   overflow: hidden; }
-  .port-item a:hover .port-image, .port-item a:active .port-image, .port-item a:focus .port-image {
+  .port-item a:hover .port-image, .port-item a:focus .port-image {
     transform: scale(1.1);
-    opacity: .7; }
-  .port-item a:hover .port-caption, .port-item a:active .port-caption, .port-item a:focus .port-caption {
+    opacity: .5; }
+  .port-item a:hover .port-caption, .port-item a:focus .port-caption {
     opacity: 1; }
 
 .port-image {
   width: 100%;
-  opacity: 1;
+  opacity: .5;
   transition: all .7s ease-out, opacity .7s ease; }
 
 .port-caption {
@@ -172,9 +203,8 @@ section {
   top: 0;
   left: 0;
   right: 0;
-  font-size: 2.5em;
-  opacity: 0;
-  transition: all .7s ease-out, opacity .7s ease; }
+  font-size: 1.5em;
+  opacity: 1; }
   .port-caption p {
     color: #eee;
     margin: 1vh; }
@@ -233,7 +263,7 @@ footer {
   outline: none; }
 
 /* TAB screens */
-@media all and (min-width: 500px) {
+@media all and (min-width: 650px) {
   header {
     order: 1;
     min-height: 100vh; }
@@ -265,15 +295,27 @@ footer {
     width: 100%;
     margin: 0 auto;
     max-width: 1170px;
-    align-items: center; }
-  #hello {
-    display: flex; }
-    #hello div {
-      width: 50%; }
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row: auto auto; }
+    section div {
+      flex: 0 1 40%;
+      padding: 5%; }
+  #work {
+    background-color: #8f8d8f; }
+  #portfolio {
+    display: block; }
   .port-item {
     width: 50%; }
-  .port-caption p {
-    margin: 1em; }
+  .port-caption {
+    font-size: 2.5em;
+    opacity: 0;
+    transition: all .7s ease-out, opacity .7s ease; }
+    .port-caption p {
+      margin: 1em; }
+  .port-image {
+    opacity: 1;
+    transition: all .7s ease-out, opacity .7s ease; }
   .imgfull {
     width: 90%;
     margin: 1vw 5% 1vw 5%; }
@@ -293,7 +335,7 @@ footer {
     display: flex; } }
 
 /* Desktop */
-@media all and (min-width: 800px) {
+@media all and (min-width: 1000px) {
   nav ul {
     justify-content: flex-end; }
   nav a {
