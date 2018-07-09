@@ -109,6 +109,55 @@ section {
 		    color: #eee;
 		}
 }
+#portfolio div {
+    padding: 0;
+}
+.port-container {
+  width:100%;
+  margin: 0 auto;
+  background-color:#000;
+  overflow:hidden;
+  
+}
+.port-item  {
+  width:100%;
+  max-height:30em;
+  position:relative;
+  float:left;
+  overflow:hidden;
+  a:hover, a:active, a:focus {
+    .port-image {
+      transform: scale(1.1);
+      opacity:.7;
+    }
+    .port-caption{
+      opacity:1;
+    }
+  }
+}
+.port-image {
+  width:100%;
+  opacity:1;
+  transition: all .7s ease-out, opacity .7s ease;
+}
+
+.port-caption {
+  position:absolute;
+  z-index: 1;
+  text-align:center;
+  top:0;
+  left:0;
+  right:0;
+  font-size:2.5em;
+  opacity:0;
+  transition: all .7s ease-out, opacity .7s ease;
+  p {
+  	color:#eee;
+  	margin: 1vh;
+  }
+  
+}
+
 .imgfull {
 	width: 100%;
 }
@@ -206,22 +255,30 @@ main {
 	margin: 2em auto;
 }
 section {
-	display: flex;
+	
 	width: 100%;
 	margin: 0 auto;
 	max-width: 1170px;
 	align-items: center;
 
 	div {
-		flex: 1 auto;
-		padding: 4vw;
+	 
 	}
 }
 #hello {
+	display:flex;
  div {
  	width:50%;
  }
-
+}
+.port-item  {
+  width:50%;
+}
+.port-caption {
+  p {
+  	margin: 1em;
+  }
+  
 }
 .imgfull {
 	width: 90%;
@@ -245,6 +302,8 @@ section {
 }
 footer {
 	order:4;
+	display:flex;
+	div {}
 }
 }
 
