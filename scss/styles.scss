@@ -141,7 +141,6 @@ header, main, section, footer {
 
 .main {
   padding-top: 7vh;
-  min-height: 100vh;
 }
 
 .hero {
@@ -149,7 +148,7 @@ header, main, section, footer {
   background-color: #333333;
   position: relative;
   text-align: center;
-  min-height:96vh;
+  min-height:93vh;
   &:before {
     content: "";
     background-color: rgba(0,0,0,.35);
@@ -455,7 +454,7 @@ h6 {font-size: 1.500rem; line-height: 1.375;}
   top:0;
   left:0;
   right:0;
-  font-size:1.5em;
+  font-size:1.25em;
   opacity:1;
 
   p {
