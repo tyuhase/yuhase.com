@@ -17,46 +17,6 @@ $white: #eeeeee;
 $link-color: #00aeef;
 $hover-link-color: blue;
 
-body { background: #eaeaea; margin: 0px auto; font-family: 'Oswald', sans-serif; color:#777; width: 100%; font-size: 18px ; display: flex;	flex-flow: column wrap;}
-h1 { font-size: 4em; font-family: 'Anton', sans-serif; margin: 10px 0px; padding: .75vw 0; }
-h2 { font-size: 9vh; color: #333; margin: 10px 0px; padding: .75vw 0; }
-h3 { font-size: 2em; color: #333; margin: 10px 0px; padding: .75vw 0; }
-p { font-size: 1.5em; margin: 0px; padding: 2vh 0;}
-a { text-decoration: none; color: #00aeef;  }
-a, button {transition: .3s;}
-span {font-family: 'Oswald', sans-serif;}
-img {width:100%;}
-
-/* Mobile First */
-
-header, main, section, footer {
-  display: block;
-  position: relative;
-  width: 100%;
-}
-.skip-to-main {
-  padding: 1rem;
-  display: block;
-  position: absolute;
-  background-color: $white;
-  left: -9rem;
-  &:focus{
-    top: 0;
-    left: 0;
-    z-index: 10;
-  }
-}
-
-.bg1 {background: url(../images/backgrounds/bg2.gif);}
-.bg2 {background: url(../images/backgrounds/bg3.gif) ;}
-.bg3 {background: url(../images/backgrounds/bg6.gif) ;}
-.bg4 {background: url(../images/backgrounds/bg8.gif) ;}
-.bg1, .bg2, .bg3, .bg4 {
-	  background-position: center center;
-	  background-repeat: no-repeat;
-	  background-size: cover;
-	  background-attachment: fixed;
-}
 //Normalize
 html {
   -ms-text-size-adjust: 100%;
@@ -107,6 +67,50 @@ body {
   font-size: 18px; 
   font-family: $oswald;
 }
+
+//* styles *//
+
+body { background: #eaeaea; margin: 0px auto; font-family: 'Oswald', sans-serif; color:#777; width: 100%; font-size: 18px ; display: flex;	flex-flow: column wrap;}
+h1 { font-size: 4em; font-family: 'Anton', sans-serif; margin: 10px 0px; padding: .75vw 0; }
+h2 { font-size: 9vh; color: #333; margin: 10px 0px; padding: .75vw 0; }
+h3 { font-size: 2em; color: #333; margin: 10px 0px; padding: .75vw 0; }
+p { font-size: 1.5em; margin: 0px; padding: 2vh 0;}
+a { text-decoration: none; color: #00aeef;  }
+a, button {transition: .3s;}
+span {font-family: 'Oswald', sans-serif;}
+img {width:100%;}
+
+/* Mobile First */
+
+header, main, section, footer {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.skip-to-main {
+  padding: 1rem;
+  display: block;
+  position: absolute;
+  background-color: $white;
+  left: -9rem;
+  &:focus{
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+}
+
+.bg1 {background: url(../images/backgrounds/bg2.gif);}
+.bg2 {background: url(../images/backgrounds/bg3.gif) ;}
+.bg3 {background: url(../images/backgrounds/bg6.gif) ;}
+.bg4 {background: url(../images/backgrounds/bg8.gif) ;}
+.bg1, .bg2, .bg3, .bg4 {
+	  background-position: center center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  background-attachment: fixed;
+}
+
 
 .skip-to-main {
   padding: 1rem;
@@ -161,7 +165,7 @@ body {
     position: relative;
     z-index: 2;
     .headline, .lede { 
-      margin-bottom: 2rem;       
+      margin-bottom: 1rem;       
       text-shadow: 2px 2px 5px black;
      }
     .headline {
@@ -354,19 +358,17 @@ header {
 
 
 //Typography
-h1 {font-size: 3rem;  line-height: 1.777;}
-h2 {font-size: 2.625em;  line-height: 1.7;}
-h3 {font-size: 2.250rem;  line-height: 1.333;}
-h4 {font-size: 2rem;  line-height: 1.344;}
-h5 {font-size: 1.750em;  line-height: 1.357;}
-h6 {font-size: 1.500rem;  line-height: 1.375;}
+h1 {font-size: 3rem; line-height: 1.777;}
+h2 {font-size: 2.625em; line-height: 1.7;}
+h3 {font-size: 2.250rem; line-height: 1.333;}
+h4 {font-size: 2rem; line-height: 1.344;}
+h5 {font-size: 1.750em; line-height: 1.357;}
+h6 {font-size: 1.500rem; line-height: 1.375;}
 
 .headline {font-family: $anton;}
-.lede {font-size: 1.313rem;  line-height: 1.381;}
+.lede {font-size: 1.313rem; line-height: 1.381;}
 .small {font-size: .9rem;}
-.postscript {
-  font-size: 1rem;
-  margin-top: 3rem;
+.postscript {font-size: 1rem; margin-top: 3rem;
   a { 
     color: white;
     border-bottom: 2px solid white;
