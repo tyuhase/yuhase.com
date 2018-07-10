@@ -448,7 +448,8 @@ h6 {
 #talk .container {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: center; }
   #talk .container p {
     margin: 0 auto; }
 
