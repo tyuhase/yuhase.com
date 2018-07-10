@@ -314,15 +314,12 @@ header {
 		top: -0.0625em;
 	}
 
-	/* Menu toggle styles. */
-
 	.icon-menu-toggle {
 		width: 2em;
 		height: 2em;
 	  top: 0;
 	}
 
-	/* Animate menu icon (lines). */
 	.svg-menu-toggle .line {
 	  opacity: 1;
 	  transform: rotate(0) translateY(0) translateX(0);
@@ -346,7 +343,6 @@ header {
 	  transform: rotate(-45deg) translateY(0em) translateX(0em);
 	}
 
-	/* Text meant only for screen readers. */
 	.screen-reader-text {
 		clip: rect(1px, 1px, 1px, 1px);
 		position: absolute !important;
