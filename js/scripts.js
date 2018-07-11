@@ -29,6 +29,7 @@ $('#toggle').click(function() {
    $('#overlay').toggleClass('open');
   });
 
+
   // menu stuff
 
   $(document).ready(function() {
@@ -63,5 +64,17 @@ button.onclick = function() {
    }
     
  };
+});
+
+ $(document).ready(function() {
+
+$('#menu ul > li:last-child').keydown(function (e) {
+      if (e.which == 9 && e.shiftKey) {
+            // do nothing
+      } else if (e.which == 9) {
+           $('#menu').hide();
+      }
+});
+
 });
 

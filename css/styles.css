@@ -1,6 +1,6 @@
 /* CSS Document */
 @import url("normalize.css");
-@import url("https://fonts.googleapis.com/css?family=Anton|Oswald");
+@import url("https://fonts.googleapis.com/css?family=Anton|Open+Sans");
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -31,7 +31,7 @@ span {
 
 p {
   max-width: 45rem;
-  line-height: 1.23; }
+  line-height: 1.5; }
 
 strong {
   font-weight: bold; }
@@ -49,7 +49,7 @@ header, main, section, footer {
 
 body {
   font-size: 18px;
-  font-family: "Oswald", sans-serif; }
+  font-family: "Open Sans", sans-serif; }
 
 body {
   background: #eaeaea;
@@ -80,7 +80,7 @@ h3 {
   padding: .75vw 0; }
 
 p {
-  font-size: 1.5em;
+  font-size: 1em;
   margin: 0px;
   padding: 2vh 0; }
 
@@ -155,15 +155,12 @@ header, main, section, footer {
     flex: row nowrap;
     justify-content: space-between; }
 
-.main {
-  padding-top: 7vh; }
-
 .hero {
   color: white;
   background-color: #333333;
   position: relative;
   text-align: center;
-  min-height: 93vh; }
+  min-height: 100vh; }
   .hero:before {
     content: "";
     background-color: rgba(0, 0, 0, 0.35);
@@ -209,7 +206,7 @@ header, main, section, footer {
   font-family: "Anton", sans-serif;
   color: #eeeeee; }
   .logo .longform {
-    font-family: "Oswald", sans-serif; }
+    font-family: "Open Sans", sans-serif; }
     .logo .longform:before {
       content: "";
       border-right: 1px solid #eeeeee;
@@ -240,7 +237,7 @@ header, main, section, footer {
   visibility: hidden;
   width: 100%;
   height: 100%;
-  font-family: "Oswald", sans-serif, san-serif;
+  font-family: "Open Sans", sans-serif, san-serif;
   transition: opacity .5s, visibility .5s;
   text-align: center;
   opacity: 0;
@@ -386,7 +383,7 @@ h6 {
     border: 2px solid #eeeeee;
     background-color: #eeeeee;
     color: black;
-    font-family: "Oswald", sans-serif; }
+    font-family: "Open Sans", sans-serif; }
     .button.primary:hover, .button.primary:focus {
       border: 2px solid #8f8d8f;
       color: white;
@@ -401,7 +398,7 @@ h6 {
   .button.secondary {
     border: 2px solid #eeeeee;
     color: white;
-    font-family: "Oswald", sans-serif; }
+    font-family: "Open Sans", sans-serif; }
     .button.secondary:hover, .button.secondary:focus {
       color: black;
       background-color: #eeeeee; }
@@ -456,9 +453,11 @@ h6 {
 /* TAB screens */
 @media all and (min-width: 650px) {
   .header {
-    height: 7vh; }
+    height: auto; }
   #portfolio {
-    display: block; }
+    display: block;
+    background-color: #d8d8d8;
+    padding-bottom: 3rem; }
   .port-item {
     width: 50%; }
   .port-caption {

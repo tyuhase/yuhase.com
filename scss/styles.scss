@@ -2,15 +2,15 @@
 /* CSS Document */
 
 @import url("normalize.css");
-@import url('https://fonts.googleapis.com/css?family=Anton|Oswald');
+@import url('https://fonts.googleapis.com/css?family=Anton|Open+Sans');
 
 
 //Variables
 $anton: 'Anton', sans-serif;
-$oswald: 'Oswald', sans-serif;
+$oswald: 'Open Sans', sans-serif;
 
 $primary-color: #8f8d8f;
-$secondary-color: blue;
+$secondary-color: #d8d8d8;
 $accent-color: #00aeef;
 $white: #eeeeee;
 
@@ -49,7 +49,7 @@ li {display: block;}
 
 span {display: block;}
 
-p {max-width: 45rem;  line-height: 1.23;}
+p {max-width: 45rem;  line-height: 1.5;}
 
 strong {font-weight: bold;}
 
@@ -74,7 +74,7 @@ body { background: #eaeaea; margin: 0px auto; font-family: 'Oswald', sans-serif;
 h1 { font-size: 4em; font-family: 'Anton', sans-serif; margin: 10px 0px; padding: .75vw 0; }
 h2 { font-size: 9vh; color: #333; margin: 10px 0px; padding: .75vw 0; }
 h3 { font-size: 2em; color: #333; margin: 10px 0px; padding: .75vw 0; }
-p { font-size: 1.5em; margin: 0px; padding: 2vh 0;}
+p { font-size: 1em; margin: 0px; padding: 2vh 0;}
 a { text-decoration: none; color: #00aeef;  }
 a, button {transition: .3s;}
 span {font-family: 'Oswald', sans-serif;}
@@ -139,16 +139,12 @@ header, main, section, footer {
   }
 }
 
-.main {
-  padding-top: 7vh;
-}
-
 .hero {
   color: white;
   background-color: #333333;
   position: relative;
   text-align: center;
-  min-height:93vh;
+  min-height:100vh;
   &:before {
     content: "";
     background-color: rgba(0,0,0,.35);
@@ -477,10 +473,12 @@ h6 {font-size: 1.500rem; line-height: 1.375;}
 @media all and (min-width: 650px) {
 
 .header {
-  height: 7vh;
+  height: auto;
 }
 #portfolio {
 	display:block;
+	background-color: #d8d8d8;
+padding-bottom: 3rem;
 }
 .port-item  {
   width:50%;
