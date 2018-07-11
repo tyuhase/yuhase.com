@@ -1,5 +1,4 @@
 /* CSS Document */
-@import url("normalize.css");
 @import url("https://fonts.googleapis.com/css?family=Anton|Open+Sans");
 html {
   -ms-text-size-adjust: 100%;
@@ -102,6 +101,9 @@ header, main, section, footer {
   display: block;
   position: relative;
   width: 100%; }
+
+.backpage {
+  margin-top: 5vh; }
 
 .skip-to-main {
   padding: 1rem;
@@ -331,11 +333,11 @@ header .screen-reader-text {
 
 h1 {
   font-size: 3rem;
-  line-height: 1.777; }
+  line-height: 1.177; }
 
 h2 {
   font-size: 2.625em;
-  line-height: 1.7; }
+  line-height: 1.3; }
 
 h3 {
   font-size: 2.250rem;
@@ -439,12 +441,14 @@ h6 {
   font-size: 1.25em;
   opacity: 1; }
   .port-caption p {
+    font-family: "Anton", sans-serif;
     color: #eee;
-    margin: 1vh; }
+    margin: 10vh;
+    font-size: 2em; }
 
 #talk .container {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-between;
   align-items: center; }
   #talk .container p {
@@ -452,6 +456,10 @@ h6 {
 
 /* TAB screens */
 @media all and (min-width: 650px) {
+  h1 {
+    line-height: 1.777; }
+  h2 {
+    line-height: 1.7; }
   .header {
     height: auto; }
   #portfolio {
@@ -465,10 +473,14 @@ h6 {
     opacity: 0;
     transition: all .7s ease-out, opacity .7s ease; }
     .port-caption p {
-      margin: 1em; }
+      margin: 1vh;
+      font-size: 1em; }
   .port-image {
     opacity: 1;
-    transition: all .7s ease-out, opacity .7s ease; } }
+    transition: all .7s ease-out, opacity .7s ease; }
+  #talk .container {
+    flex-flow: row nowrap;
+    text-align: inherit; } }
 
 /* Desktop */
 /* Animation stuff */
