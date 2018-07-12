@@ -75,6 +75,7 @@ $('#menu ul > li:last-child').keydown(function (e) {
            $('#menu').hide();
       }
 });
+//anchor llink scroll adjustment
 var offset = $(':target').offset();
 var scrollto = offset.top - 60; // minus fixed header height
 $('html, body').animate({scrollTop:scrollto}, 0);
