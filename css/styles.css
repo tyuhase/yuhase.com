@@ -103,7 +103,7 @@ header, main, section, footer {
   width: 100%; }
 
 .backpage {
-  margin-top: 5vh; }
+  margin-top: 7vh; }
 
 .skip-to-main {
   padding: 1rem;
@@ -146,7 +146,6 @@ header, main, section, footer {
     z-index: 10; }
 
 .header {
-  height: 11vh;
   background-color: black;
   background: linear-gradient(to bottom, #111111, black);
   color: white;
@@ -355,6 +354,14 @@ h6 {
   font-size: 1.500rem;
   line-height: 1.375; }
 
+h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: black;
+  border-bottom: 2px solid #00aeef; }
+
+h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+  border-bottom: 4px solid #00aeef;
+  transition: .3s; }
+
 .headline {
   font-family: "Anton", sans-serif; }
 
@@ -454,18 +461,20 @@ h6 {
   #talk .container p {
     margin: 0 auto; }
 
+#portfolio {
+  display: block;
+  background-color: #d8d8d8;
+  padding-bottom: 3rem; }
+
+.recent-projects section:nth-child(even) {
+  background-color: #d8d8d8; }
+
 /* TAB screens */
 @media all and (min-width: 650px) {
-  h1 {
-    line-height: 1.777; }
-  h2 {
-    line-height: 1.7; }
+  h1, h2, h3 {
+    margin-top: 3vh; }
   .header {
     height: auto; }
-  #portfolio {
-    display: block;
-    background-color: #d8d8d8;
-    padding-bottom: 3rem; }
   .port-item {
     width: 50%; }
   .port-caption {

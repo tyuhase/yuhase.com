@@ -77,4 +77,7 @@ $('#menu ul > li:last-child').keydown(function (e) {
 });
 
 });
+ var offset = $(':target').offset();
+var scrollto = offset.top - 100; // minus fixed header height
+$('html, body').animate({scrollTop:scrollto}, 0);
 

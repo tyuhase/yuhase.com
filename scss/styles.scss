@@ -87,7 +87,7 @@ header, main, section, footer {
   width: 100%;
 }
 .backpage {
-    margin-top: 5vh;
+    margin-top: 7vh;
 }
 .skip-to-main {
   padding: 1rem;
@@ -128,7 +128,6 @@ header, main, section, footer {
 }
 
 .header {
-  height: 11vh;
   background-color: black;
   background: linear-gradient(to bottom, #111111, black);
   color: white;
@@ -361,6 +360,11 @@ h3 {font-size: 2.250rem; line-height: 1.333;}
 h4 {font-size: 2rem; line-height: 1.344;}
 h5 {font-size: 1.750em; line-height: 1.357;}
 h6 {font-size: 1.500rem; line-height: 1.375;}
+h2,h3,h4,h5,h6 {
+	a {color:black; border-bottom: 2px solid $accent-color;}
+	a:hover {border-bottom: 4px solid $accent-color; transition: .3s;}
+}
+
 
 .headline {font-family: $anton;}
 .lede {font-size: 1.313rem; line-height: 1.381;}
@@ -470,22 +474,28 @@ font-size: 2em;
 
      p {
     margin: 0 auto;
-}
-}
-
-
-/* TAB screens */
-@media all and (min-width: 650px) {
-h1 {line-height: 1.777;}
-h2 {line-height:1.7}
-.header {
-  height: auto;
+	}
 }
 #portfolio {
 	display:block;
 	background-color: #d8d8d8;
-padding-bottom: 3rem;
+	padding-bottom: 3rem;
 }
+.recent-projects {
+	section {
+		&:nth-child(even) {
+		background-color: #d8d8d8; 
+	}
+	}
+}
+
+/* TAB screens */
+@media all and (min-width: 650px) {
+h1, h2, h3 {margin-top:3vh}
+.header {
+  height: auto;
+}
+
 .port-item  {
   width:50%;
 }
