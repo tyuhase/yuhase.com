@@ -412,9 +412,6 @@ h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
       color: black;
       background-color: #eeeeee; }
 
-#portfolio div {
-  padding: 0; }
-
 .port-container {
   width: 100%;
   margin: 0 auto;
