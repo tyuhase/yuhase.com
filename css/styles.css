@@ -362,6 +362,10 @@ h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   border-bottom: 4px solid #00aeef;
   transition: .3s; }
 
+ul > li {
+  display: list-item;
+  margin-left: 2em; }
+
 .headline {
   font-family: "Anton", sans-serif; }
 

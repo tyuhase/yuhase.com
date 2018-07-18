@@ -364,6 +364,7 @@ h2,h3,h4,h5,h6 {
 	a {color:black; border-bottom: 2px solid $accent-color;}
 	a:hover {border-bottom: 4px solid $accent-color; transition: .3s;}
 }
+ul > li {display:list-item;margin-left:2em }
 
 
 .headline {font-family: $anton;}
